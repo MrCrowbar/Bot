@@ -26,15 +26,40 @@ public class BotProject {
         catch(AWTException e){
             e.printStackTrace();
         }
-        klick();
+        //for (int i = 0; i < 2; i++){
+            klick();
+        //}
     }
     public static void klick(){
         myRobot.delay(1000);
-        myRobot.mouseMove(500,500);
+        myRobot.mouseMove(75,100);
         myRobot.mousePress(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(1000);
+        myRobot.mouseRelease(MouseEvent.BUTTON1_MASK);
+        
+        myRobot.mouseMove(75,100);
+        myRobot.mousePress(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(500);
         myRobot.mouseRelease(MouseEvent.BUTTON1_MASK);
         myRobot.delay(1000);
-        myRobot.mouseMove(750,750);
+        
+        myRobot.mouseMove(75,140);
+        myRobot.mousePress(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(500);
+        myRobot.mouseRelease(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(1000);
+        
+        myRobot.mouseMove(75,180);
+        myRobot.mousePress(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(500);
+        myRobot.mouseRelease(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(1000);
+        
+        myRobot.mouseMove(75,220);
+        myRobot.mousePress(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(500);
+        myRobot.mouseRelease(MouseEvent.BUTTON1_MASK);
+        myRobot.delay(1000);
     }
     
 }
